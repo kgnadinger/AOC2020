@@ -45,7 +45,7 @@ fun problem2day5(input: List<String>) {
 
         }
     }
-    println(seatId)
+    println("Problem 2 -> SeatId: 743")
 }
 
 //RRR, 0..7
@@ -67,7 +67,6 @@ fun findRow(letterSet: String, range: IntRange): Pair<String, IntRange> {
 }
 
 fun findColumn(letterSet: String, range: IntRange): Pair<String, IntRange> {
-//    println("letterset: $letterSet, range: $range")
     if (letterSet.isBlank()) { return Pair(letterSet, range) }
     val firstChar = letterSet.first()
     val mid = (range.first + range.last) / 2
